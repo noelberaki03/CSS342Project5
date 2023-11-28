@@ -13,14 +13,13 @@
 
 #include "Course.h"
 #include <string>
-#include <unordered_map>
+#include <map>
 
 using namespace std;
 
 class Student {
     friend class Course;
     friend class University;
-    friend class EnrollmentSystem;
 
     // prints students information including name, id, and currently enrolled courses
     friend ostream& operator<<(ostream &out, const Student &student);
@@ -29,7 +28,7 @@ class Student {
         int studentId;
         string firstName;
         string lastName;
-        unordered_map<string, Course*> courses;
+        map<string, Course*> courses;
 
     public:
         // constructor
