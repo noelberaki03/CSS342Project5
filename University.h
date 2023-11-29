@@ -1,3 +1,8 @@
+/*
+This class represents an individual University in the EnrollmentSystem
+
+It has methods to read in a list of courses, read in a list of students, read in a list of enrollments, add a course and remove a course.
+*/
 #include <vector>
 #include "Student.h"
 #include "Course.h"
@@ -7,7 +12,8 @@
 class University{
   friend class EnrollmentSystem;
   private:
-  string name;  
+  string name;
+  vector <Course*> courseList;
 
   //Constructor for University 
   University(string name);
