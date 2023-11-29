@@ -29,7 +29,7 @@ class Course
 private:
     string courseTitle;
     int courseID;
-    unordered_map<string, Student *> classList;
+    vector<Student *> classList;
 
     // constructor
     Course(int id, const string &title);
