@@ -53,10 +53,10 @@ private:
     string getClassListByID(const string &courseNumber) const;
 
     // compares student's last names
-    static int cmpLastName(const Student &student1, const Student &student2);
+    static bool cmpLastName(const Student &student1, const Student &student2);
 
     // compares student's IDs
-    static int cmpID(const Student &student1, const Student &student2);
+    static bool cmpID(const Student &student1, const Student &student2);
 };
 
 #endif
