@@ -32,7 +32,7 @@ private:
     vector<Student *> classList;
 
     // constructor
-    Course(int id, const string &title);
+    Course(string id, const string &title);
 
     // destructor
     ~Course();
