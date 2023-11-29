@@ -11,11 +11,12 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
-#include "Course.h"
 #include <string>
 #include <map>
 
 using namespace std;
+
+class Course;
 
 class Student
 {
