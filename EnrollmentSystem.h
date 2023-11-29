@@ -1,3 +1,9 @@
+/*
+This in the main class that manages all of the enrollment information for all the University 
+objects by selecting a specific university and managing its courses and students.
+
+
+*/
 #include "University.h"
 
 using namespace std;
