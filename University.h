@@ -21,7 +21,7 @@ class University{
   //Desrtuctor for University
   ~University();
 
-  //reads in the student list, returns true if file is read successfully
+  //reads in the student list, by ID number then name, returns true if file is read successfully
   bool readStudentList(const string& fileName);
 
   //reads in the course list returns true if file is read successfully
