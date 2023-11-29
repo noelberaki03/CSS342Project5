@@ -28,7 +28,7 @@ class Course
 
 private:
     string courseTitle;
-    int courseID;
+    string courseID;
     vector<Student *> classList;
 
     // constructor
