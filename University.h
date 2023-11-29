@@ -6,14 +6,14 @@ It has methods to read in a list of courses, read in a list of students, read in
 #include <vector>
 #include "Student.h"
 #include "Course.h"
-
+#include <map>
 
 
 class University{
   friend class EnrollmentSystem;
   private:
   string name;
-  vector <Course*> courseList;
+  unordered_map <string, Course*> courseList;
 
   //Constructor for University 
   University(string name);
