@@ -1,5 +1,5 @@
 /*
-This in the main class that manages all of the enrollment information for all the University 
+This in the main class that manages all of the enrollment information for all the University
 objects by selecting a specific university and managing its courses and students.
 
 
@@ -8,25 +8,24 @@ objects by selecting a specific university and managing its courses and students
 
 using namespace std;
 
-class EnrollmentSystem{
-    private:
-    vector<University*> universities;
-    
-    public:
+class EnrollmentSystem
+{
+private:
+    vector<University *> universities;
 
-    //constructor
+public:
+    // constructor
     EnrollmentSystem();
 
     // deconstructor
-    ~EncrollmentSystem();
+    ~EnrollmentSystem();
 
     // Add university to the enrollments system
     bool addUniversity(const string &name);
 
     // Set this university as the active university for other functions
-     bool setCurrentUniversity(const string &name);
+    bool setCurrentUniversity(const string &name);
 
     // Return the current active university name
     string getUniversityName() const;
 };
-
